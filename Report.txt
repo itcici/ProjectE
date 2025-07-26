@@ -1,0 +1,48 @@
+Data Structure
+Cecilia Pan Wai
+07/25/25
+1)	Assumptions
+•	All operands are integers and return true or false which would be represented as 1 for true or 0 for false.
+•	The program ask user for input of operators and operands. Invalid operators and operands will output error messages.
+•	Unary operators include: 
+-	“!” logical NOT
+-	“++” prefix increment 
+-	“—" prefix decrement 
+-	“-“unary negative, used for a negative number not as subtraction
+•	The program supports all binary operators included in the picture provided in Report.png
+ 
+
+•	Division by 0 or invalid token will result in exception with short error message, program should stop when the first error is detected.
+•	Expression can have space between them and be seen as the same (ex: 1+2 is the same as 1 + 2).
+
+2)	UML Diagram
+ - will also be provided in Report.png
+                                
+	
+
+
+
+
+
+	
+3)	Efficiency of Algorithms
+•	Tokenize()
+-	Complexity: O(N), n is the length of input string
+-	Read each character once and form token for operands and operator
+•	toPostfix()
+-	Complexity :  O(N), n = number ok tokens.
+-	Implement the shunting – yard algorithm, including precedence and associativity.
+•	evalPostfix()
+-	Complexity : O(N) n = number of tokens
+-	Use stack to evaluate postfix expression
+•	Stack operation ( push, pop, top, empty )
+-	Complexity  : O(1)
+-	Push() – add item to top of stack
+-	Pop() – remove item from top of stack
+-	Top() return item at top
+-	Empty() – check if stack is null
+
+4 ) References
+•  “Operator Precedence.” cppreference.com, https://en.cppreference.com/w/cpp/language/operator_precedence.
+•  “Shunting-yard Algorithm.” Wikipedia, Wikimedia Foundation, https://en.wikipedia.org/wiki/Shunting-yard_algorithm.
+•  “Stack Data Structure.” GeeksforGeeks, https://www.geeksforgeeks.org/stack-data-struct

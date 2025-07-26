@@ -134,6 +134,12 @@
     <ClInclude Include="eval.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Report.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Report.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
